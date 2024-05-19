@@ -1,0 +1,104 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+
+    .main {
+        width: 100%;
+        max-width: 1440px;
+        padding: 30px;
+
+        .topSection {
+            position: absolute;
+
+            .heading {
+                font-size: 20px;
+                font-weight: 900;
+            }
+
+            .form {
+                margin-top: 30px;
+                display: flex;
+                gap: 15px;
+
+                .topText,
+                .bottomText {
+                    width: 100%;
+                }
+
+                .submitButton {
+                    height: 50px;
+                    overflow: hidden;
+                }
+            }
+        }
+
+
+        .outputContainer {
+            margin-top: 130px;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            overflow: auto;
+            height: calc(100vh - 150px);
+
+            .memesContainer {
+                // border: 1px solid orangered;
+                padding: 15px;
+                width: 40%;
+                min-height: 300px;
+                position: relative;
+
+                .memeName {
+                    text-align: center;
+                    font-weight: 900;
+                    font-size: 20px;
+                }
+
+                .memeImage {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .memeTopText,
+                .memeBottomText {
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    color: #fff;
+                    word-break: break-all;
+                    text-align: center;
+                    line-height: 21px;
+                    ;
+                }
+
+                .memeTopText {
+                    top: 0;
+                }
+
+                .memeBottomText {
+                    bottom: 0;
+                }
+
+                .saveButton {
+                    margin-top: 15px;
+                }
+
+            }
+
+        }
+    }
+}
