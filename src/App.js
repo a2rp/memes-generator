@@ -1,6 +1,6 @@
 import React from 'react'
 import MemesGenerator from './memesGenerator'
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {

@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import { Button, CircularProgress, TextField } from "@mui/material";
 import axios from "axios";
 import { toPng } from "html-to-image";
+import { toast } from "react-toastify";
 
 const MemesGenerator = () => {
     const [isLoading, setIsLoading] = useState(false);
@@ -21,10 +22,8 @@ const MemesGenerator = () => {
             setIsLoading(true);
             setMemes(null);
             const response = await axios(options);
-            console.log(response, "response");
             setMemes(response.data.data.memes);
         } catch (error) {
-            console.log(error, "error");
             toast.error(error.message);
         } finally {
             setIsLoading(false);
@@ -38,7 +37,7 @@ const MemesGenerator = () => {
             link.href = dataUrl;
             link.click();
         }).catch((err) => {
-            console.log(err);
+            toast.error(err.message);
         })
     }
 
