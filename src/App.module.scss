@@ -1,0 +1,46 @@
+.appShell {
+  background: #f4f7fb;
+  color: #19283e;
+  min-height: 100vh;
+}
+.header { align-items: center; background: rgba(255, 255, 255, 0.96); border-bottom: 1px solid #d9e2ef; display: flex; justify-content: space-between; left: 0; min-height: 72px; padding: 0 clamp(1rem, 4vw, 4.5rem); position: fixed; right: 0; top: 0; z-index: 10; }
+.brand { align-items: center; color: inherit; display: inline-flex; gap: 0.7rem; text-decoration: none; }
+.brand img { border: 1px solid #d9e2ef; border-radius: 11px; height: 42px; object-fit: contain; padding: 0.25rem; width: 42px; }
+.brand span { display: grid; gap: 0.1rem; }
+.brand small, .eyebrow { color: #4764a3; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; }
+.brand small { color: #77869d; }
+.brand strong { font-size: 1rem; }
+.navigation { align-items: center; display: flex; gap: 0.35rem; }
+.navigation a, .heroButton { align-items: center; border: 1px solid transparent; border-radius: 999px; color: #55657d; display: inline-flex; font-size: 0.88rem; gap: 0.4rem; padding: 0.58rem 0.8rem; text-decoration: none; transition: border-color 180ms ease, box-shadow 180ms ease, text-shadow 180ms ease; }
+.navigation a:hover, .heroButton:hover { border-color: #9eb4dd; box-shadow: 0 7px 17px rgba(59, 89, 143, 0.13); color: #2b4e96; text-shadow: 0 1px 8px rgba(59, 89, 143, 0.18); }
+.menuButton { align-items: center; background: #fff; border: 1px solid #cad7e8; border-radius: 10px; color: #233854; cursor: pointer; display: none; font-size: 1.2rem; height: 40px; justify-content: center; width: 40px; }
+.hero { align-items: center; display: grid; gap: clamp(2rem, 5vw, 5rem); grid-template-columns: 1fr 0.9fr; margin: 0 auto; max-width: 1180px; padding: clamp(8rem, 13vw, 11rem) clamp(1rem, 4vw, 2rem) 5rem; }
+.heroCopy h1 { font-size: clamp(2.7rem, 6vw, 5.5rem); letter-spacing: -0.07em; line-height: 0.98; margin: 0.8rem 0 1.3rem; max-width: 690px; }
+.heroText { color: #66768c; font-size: clamp(1rem, 2vw, 1.15rem); line-height: 1.7; margin: 0 0 1.8rem; max-width: 570px; }
+.heroButton { background: #213e78; border-color: #213e78; color: #fff; gap: 0.55rem; }
+.heroButton:hover { border-color: #476fc0; box-shadow: 0 10px 22px rgba(33, 62, 120, 0.23); color: #fff; text-shadow: 0 1px 8px rgba(255, 255, 255, 0.2); }
+.heroImage { position: relative; }
+.heroImage img { border: 1px solid #d5dfec; border-radius: 22px; box-shadow: 0 20px 45px rgba(54, 75, 109, 0.12); display: block; height: min(420px, 45vw); object-fit: cover; width: 100%; }
+.heroImage span { background: #fff; border: 1px solid #d5dfec; border-radius: 12px; bottom: 1rem; box-shadow: 0 8px 18px rgba(54, 75, 109, 0.12); color: #40516a; font-size: 0.8rem; padding: 0.7rem 0.9rem; position: absolute; right: 1rem; }
+.aboutSection { margin: 0 auto; max-width: 1180px; padding: 1rem clamp(1rem, 4vw, 2rem) 6rem; }
+.aboutSection h2 { font-size: clamp(2rem, 4vw, 3.8rem); letter-spacing: -0.06em; margin: 0.5rem 0 2rem; max-width: 640px; }
+.aboutCards { display: grid; gap: 1rem; grid-template-columns: repeat(3, 1fr); }
+.aboutCards article { background: #fff; border: 1px solid #d9e2ef; border-radius: 16px; padding: 1.3rem; transition: border-color 180ms ease, box-shadow 180ms ease, text-shadow 180ms ease; }
+.aboutCards article:hover { border-color: #7998d1; box-shadow: 0 14px 28px rgba(59, 89, 143, 0.12); text-shadow: 0 1px 8px rgba(59, 89, 143, 0.1); }
+.aboutCards span { color: #4764a3; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; }
+.aboutCards h3 { margin: 1.4rem 0 0.5rem; }
+.aboutCards p, .footerText { color: #718097; line-height: 1.65; margin: 0; }
+.footer { border-top: 1px solid #d9e2ef; margin: 0 auto; max-width: 1180px; padding: 2rem clamp(1rem, 4vw, 2rem); }
+.footerTop, .footerBottom { align-items: center; display: flex; justify-content: space-between; }
+.footerTop { gap: 1.5rem; }
+.socialLinks { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: flex-end; }
+.socialLinks a { align-items: center; border: 1px solid #cad7e8; border-radius: 10px; color: #55657d; display: inline-flex; height: 38px; justify-content: center; transition: border-color 180ms ease, box-shadow 180ms ease, text-shadow 180ms ease; width: 38px; }
+.socialLinks a:hover { border-color: #4764a3; box-shadow: 0 8px 16px rgba(59, 89, 143, 0.13); color: #2b4e96; text-shadow: 0 1px 8px rgba(59, 89, 143, 0.24); }
+.footerBottom { border-top: 1px solid #e3eaf3; color: #718097; font-size: 0.9rem; justify-content: flex-start; margin-top: 2rem; padding-top: 1.2rem; }
+.footerBottom a { color: #2b4e96; font-weight: 700; margin-left: 0.25rem; text-decoration: none; }
+.topButton { align-items: center; background: #213e78; border: 1px solid #213e78; border-radius: 50%; bottom: 1.25rem; color: #fff; cursor: pointer; display: flex; height: 44px; justify-content: center; opacity: 0; pointer-events: none; position: fixed; right: 1.25rem; transform: translateY(10px); transition: border-color 180ms ease, box-shadow 180ms ease, opacity 180ms ease, transform 180ms ease, text-shadow 180ms ease; width: 44px; z-index: 20; }
+.topButtonVisible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+.topButton:hover { border-color: #7899d5; box-shadow: 0 8px 20px rgba(33, 62, 120, 0.25); text-shadow: 0 1px 8px rgba(255, 255, 255, 0.35); }
+.srOnly { clip: rect(0 0 0 0); clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; position: absolute; white-space: nowrap; width: 1px; }
+@media (max-width: 760px) { .menuButton { display: inline-flex; } .navigation { background: #fff; border: 1px solid #d9e2ef; border-radius: 15px; box-shadow: 0 18px 36px rgba(32, 55, 104, 0.14); display: none; flex-direction: column; padding: 0.7rem; position: absolute; right: 1rem; top: 64px; } .navigationOpen { display: flex; } .navigation a { justify-content: flex-start; width: 185px; } .hero { grid-template-columns: 1fr; padding-top: 7.5rem; } .heroImage img { height: 300px; } .aboutCards, .footerTop { grid-template-columns: 1fr; } .footerTop { align-items: flex-start; flex-direction: column; } .socialLinks { justify-content: flex-start; } }
+@media (max-width: 480px) { .brand strong { font-size: 0.92rem; } .brand small { font-size: 0.61rem; } .heroImage span { bottom: 0.7rem; font-size: 0.72rem; right: 0.7rem; } }
