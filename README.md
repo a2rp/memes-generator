@@ -10,6 +10,7 @@ A responsive React tool for loading public Imgflip meme templates, adding top an
 - Adds editable top and bottom captions
 - Responsive template grid with accessible controls
 - Saves an individual meme as a PNG from the browser
+- Adds captions locally; text is not sent to Imgflip. Templates are community-uploaded and can change over time.
 - Fixed header, mobile menu, local branding assets, icon-only footer links, and go-to-top control
 
 ## Tech stack
@@ -19,7 +20,7 @@ React, Create React App, Material UI, Sass, Axios, html-to-image, and React Icon
 ## Run locally
 
 ```bash
-npm install
+npm ci
 npm start
 ```
 
